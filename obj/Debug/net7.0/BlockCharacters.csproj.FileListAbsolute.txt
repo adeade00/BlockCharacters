@@ -1,0 +1,15 @@
+/home/adrianlevin/BlockCharacters/bin/Debug/net7.0/BlockCharacters
+/home/adrianlevin/BlockCharacters/bin/Debug/net7.0/BlockCharacters.deps.json
+/home/adrianlevin/BlockCharacters/bin/Debug/net7.0/BlockCharacters.runtimeconfig.json
+/home/adrianlevin/BlockCharacters/bin/Debug/net7.0/BlockCharacters.dll
+/home/adrianlevin/BlockCharacters/bin/Debug/net7.0/BlockCharacters.pdb
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.csproj.AssemblyReference.cache
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.GeneratedMSBuildEditorConfig.editorconfig
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.AssemblyInfoInputs.cache
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.AssemblyInfo.cs
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.csproj.CoreCompileInputs.cache
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.dll
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/refint/BlockCharacters.dll
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.pdb
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/BlockCharacters.genruntimeconfig.cache
+/home/adrianlevin/BlockCharacters/obj/Debug/net7.0/ref/BlockCharacters.dll
