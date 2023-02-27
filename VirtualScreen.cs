@@ -15,6 +15,24 @@ namespace Blocks
         private int _max_y;
 #endregion private attributes
 
+#region private functions
+        
+        /// <summary>
+        /// Clears the virtual screen - unsets all the pixels.
+        /// </summary>
+        private void _ClearVirtualScreen()
+        {
+            for (int i = 0; i <= _max_x; i++)
+            {
+                for (int j = 0; j <= _max_y; j++)
+                {
+                    Poke(i,j,Pixel.Unset);
+                }
+            }
+        }
+
+#endregion
+
 #region basic functions
         /// <summary>
         /// Creates a class to represent the virtual screen
@@ -27,13 +45,7 @@ namespace Blocks
             _max_x = x - 1;
             _max_y = y - 1;
 
-            for (int i = 0; i <= _max_x; i++)
-            {
-                for (int j = 0; j <= _max_y; j++)
-                {
-                    Poke(i,j,Pixel.Unset);
-                }
-            }
+            _ClearVirtualScreen();
         }
 
         /// <summary>
