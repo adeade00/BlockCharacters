@@ -22,7 +22,7 @@ namespace Blocks
         /// bottom right - Eights
         /// </para>
         /// </remarks>
-        static public Dictionary<int,string> _decimalToUnicode = new Dictionary<int,string>()
+        static public Dictionary<int,string> DecimalToUnicode = new Dictionary<int,string>()
         {
             {0 ,"\u0020"}, //blank space         
             {1 ,"\u2598"}, //top left           ▘

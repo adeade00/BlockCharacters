@@ -26,6 +26,14 @@ namespace Blocks
             _virtualScreen = new Pixel[x,y];
             _max_x = x - 1;
             _max_y = y - 1;
+
+            for (int i = 0; i <= _max_x; i++)
+            {
+                for (int j = 0; j <= _max_y; j++)
+                {
+                    Poke(i,j,Pixel.Unset);
+                }
+            }
         }
 
         /// <summary>
@@ -55,6 +63,27 @@ namespace Blocks
         }
 
 #endregion basic functions
+
+#region transform functions
+
+        /// <summary>
+        /// Maps the virtual screen into characters that can be printed on the console
+        /// </summary>
+        /// <param name="x">the x coordinate on the console</param>
+        /// <param name="y">the y coordinate on the console</param>
+        /// <returns>string to print on the console that reflects the pixels in the virtual screen</returns>
+        public string MapPixelsToConsoleCharacter(int x, int y)
+        {
+            int total = 0;
+            total = total + (int)Peek(x*2  ,y*2)    ;
+            total = total + (int)Peek(x*2+1,y*2)  *2;
+            total = total + (int)Peek(x*2  ,y*2+1)*4;
+            total = total + (int)Peek(x*2+1,y*2+1)*8;
+
+            return BlockCharacters.DecimalToUnicode[total];
+        }
+
+#endregion
 
     }
 }

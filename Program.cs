@@ -3,9 +3,20 @@ Console.WriteLine("Hello, World!");
 
 string testCharacter;
 
-testCharacter = Blocks.BlockCharacters._decimalToUnicode[10];
+// testCharacter = Blocks.BlockCharacters.DecimalToUnicode[10];
+// Console.WriteLine(testCharacter);
 
+Blocks.VirtualScreen VS = new Blocks.VirtualScreen(10,10);
+
+VS.Poke(6,6,Blocks.Pixel.Set);
+VS.Poke(7,7,Blocks.Pixel.Set);
+testCharacter = VS.MapPixelsToConsoleCharacter(3,3);
 Console.WriteLine(testCharacter);
 
+VS.Poke(6,6,Blocks.Pixel.Unset);
+VS.Poke(6,7,Blocks.Pixel.Set);
+VS.Poke(7,6,Blocks.Pixel.Set);
+testCharacter = VS.MapPixelsToConsoleCharacter(3,3);
+Console.WriteLine(testCharacter);
 
 Console.WriteLine("ending");
