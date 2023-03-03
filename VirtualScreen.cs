@@ -86,11 +86,10 @@ namespace Blocks
         /// <returns>string to print on the console that reflects the pixels in the virtual screen</returns>
         public string MapPixelsToConsoleCharacter(int x, int y)
         {
-            int total = 0;
-            total = total + (int)Peek(x*2  ,y*2)    ;
-            total = total + (int)Peek(x*2+1,y*2)  *2;
-            total = total + (int)Peek(x*2  ,y*2+1)*4;
-            total = total + (int)Peek(x*2+1,y*2+1)*8;
+            int total   = (int)Peek(x*2  ,y*2) 
+                        + (int)Peek(x*2+1,y*2)  *2
+                        + (int)Peek(x*2  ,y*2+1)*4
+                        + (int)Peek(x*2+1,y*2+1)*8;
 
             return BlockCharacters.DecimalToUnicode[total];
         }
