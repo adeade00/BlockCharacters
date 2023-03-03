@@ -1,5 +1,8 @@
 namespace Blocks
 {
+    /// <summary>
+    /// Holds the mapping from Pixel Blocks to printable characters 
+    /// </summary>
     static class BlockCharacters
     {
         /// <summary>
