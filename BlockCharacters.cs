@@ -1,7 +1,7 @@
 namespace Blocks
 {
     /// <summary>
-    /// Holds the mapping from Pixel Blocks to printable characters 
+    /// Holds the data mappings between Pixel Blocks and printable characters 
     /// </summary>
     static class BlockCharacters
     {
@@ -45,5 +45,28 @@ namespace Blocks
             {15,"\u2588"}, //full block         █
         };
         
+    }
+
+    /// <summary>
+    /// Maps name to decimal number
+    /// </summary>
+    public enum ConsoleShapeToDecimal
+    {
+        blank_space         = 0,
+        top_left            = 1,
+        top_right           = 2,
+        top_half            = 3,
+        bottom_left         = 4,
+        left_half           = 5,
+        right_diagonal      = 6,
+        top_left_3          = 7,
+        bottom_right        = 8,
+        left_diagonal       = 9,
+        right_half          = 10,
+        top_right_3         = 11,
+        bottom_half         = 12,
+        bottom_left_3       = 13,
+        bottom_right_3      = 14,
+        full_block          = 15
     }
 }

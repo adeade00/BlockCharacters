@@ -23,6 +23,9 @@ Blocks.PixelScreenMapper VS = new Blocks.PixelScreenMapper(10,10);
 
 VS.Poke(6,6,Blocks.Pixel.Set);
 VS.Poke(7,7,Blocks.Pixel.Set);
-VS.PrintCharacterAt(3,3);
+VS.DisplayCharacterAt(3,3);
+
+VS.SetCharacterAt(7,7,Blocks.ConsoleShapeToDecimal.bottom_right_3);
+VS.DisplayCharacterAt(7,7);
 
 Console.WriteLine("ending");
